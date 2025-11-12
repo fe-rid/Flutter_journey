@@ -2,7 +2,6 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/base/res/styles/app_styles.dart';
 
-import '../../base/res/media.dart';
 
 class Hotel extends StatelessWidget {
   final Map<String, dynamic> hotel;

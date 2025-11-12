@@ -1,16 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/base/bottom_nav_bar.dart';
+import 'package:flutter_app/screens/home/all_tickets.dart';
 
 void main() {
-
   runApp(const MyApp());
-}
-
-class TestClass{
-  int x;
-  int y;
-
-  TestClass({required this.x, required this.y});
 }
 
 class MyApp extends StatelessWidget {
@@ -20,9 +13,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-    home: BottomNavBar()
-      );
+      routes: {
+        "/":(context)=> BottomNavBar(),
+        "/all_tickets": (context) => AllTickets()},
+
+
+    );
   }
 }
-
-
